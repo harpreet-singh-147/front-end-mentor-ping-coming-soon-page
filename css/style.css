@@ -405,7 +405,7 @@ body {
 
 /* Design image positioning while developing */
 
-body::before {
+/* body::before {
   content: '';
   position: fixed;
   top: 0;
@@ -419,4 +419,4 @@ body::before {
   opacity: 0.5;
   pointer-events: none;
   z-index: 9999;
-}
+} */

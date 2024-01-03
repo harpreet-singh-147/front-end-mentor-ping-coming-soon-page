@@ -1,34 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Ping coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+  <div class="container">
+    <div class="content-container">
+      <img src="./images/logo.svg" alt="Company Logo" class="company-logo">
 
-  We are launching soon!
+      <main class="main">
 
-  Subscribe and get notified
+        <section class="launching-soon">
+          <header class="launching-soon__header">
+            <h1 class="launching-soon__heading"><span>We are launching</span> soon!</h1>
+            <span class="launching-soon__text">Subscribe and get notified</span>
+          </header>
 
-  Notify Me
+          <form class="launching-soon__form" novalidate>
+            <div class="launching-soon__form-group">
+              <div class="launching-soon__form-input-container">
+                <input type="email" id="email" name="email" class="launching-soon__form-input"
+                  aria-describedby="emailError" aria-required="true" aria-invalid="false">
+                <label for="email" class="launching-soon__form-label">Your email address...</label>
+              </div>
+              <span class="launching-soon__form-error" id="emailError" aria-live="polite"></span>
+            </div>
+            <button class="launching-soon__btn-submit" aria-label="Subscribe to get notified">Notify Me</button>
+          </form>
 
-  &copy; Copyright Ping. All rights reserved.
+          <div class="launching-soon__img-container">
+            <img src="images/illustration-dashboard.png"
+              alt="Dashboard view showing various performance graphs and analytics" class="launching-soon__img">
+          </div>
+        </section>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__icons">
+          <a href="https://www.facebook.com" target="_blank" class="footer__icon footer__icon--blue"
+            aria-label="Follow us on Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.twitter.com" target="_blank" class="footer__icon footer__icon--blue"
+            aria-label="Follow us on Twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" class="footer__icon footer__icon--blue"
+            aria-label="Follow us on Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+        <p class="footer__copyright">&copy; Copyright Ping. All rights reserved.</p>
+      </footer>
+    </div>
+  </div>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      aria-label="Visit Frontend Mentor Website" rel="noopener noreferrer" referrerpolicy="no-referrer">Frontend
+      Mentor</a>.
+    Coded by <a href="https://github.com/harpreet-singh-147" aria-label="More about Harpreet Singh" target="_blank"
+      rel="noopener noreferrer" referrerpolicy="no-referrer">Harpreet Singh.</a>
   </footer>
+  <script src="script/app.js"></script>
 </body>
+
 </html>
